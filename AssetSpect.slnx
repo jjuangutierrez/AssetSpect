@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AssetSpect.Application/AssetSpect.Application.csproj" />
+  <Project Path="AssetSpect.Cli/AssetSpect.Cli.csproj" />
+  <Project Path="AssetSpect.Domain/AssetSpect.Domain.csproj" />
+  <Project Path="AssetSpect.Infrastructure/AssetSpect.Infrastructure.csproj" />
+</Solution>
