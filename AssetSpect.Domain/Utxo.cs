@@ -8,13 +8,17 @@ public record Utxo
  
     public Utxo(string transactionId, int outputIndex, BitcoinAmount amount)
     {
+        ArgumentException.ThrowIfNullOrEmpty(transactionId);
+        ArgumentNullException.ThrowIfNull(amount);
+        
         bool isTransactionValid = transactionId.Length == 64 && transactionId.All(c => Uri.IsHexDigit(c));
 
         if  (!isTransactionValid)
-            throw new ArgumentException($"Invalid transaction ID: {transactionId}");
+            throw new ArgumentException($"Invalid transaction ID: {nameof(transactionId)}");
         
         if (outputIndex < 0)
             throw new ArgumentOutOfRangeException(nameof(outputIndex), "A outputIndex must be greater than or equal to zero.");
+        
         
         TransactionId = transactionId;
         OutputIndex = outputIndex;
