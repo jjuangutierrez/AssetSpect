@@ -15,6 +15,8 @@ public record BitcoinAmount
     
     public static BitcoinAmount FromSatoshis(long satoshis) => new BitcoinAmount(satoshis);
     public static BitcoinAmount FromBtc(decimal btc) => new BitcoinAmount((long)(btc * 100_000_000m));
+    public static BitcoinAmount operator +(BitcoinAmount a, BitcoinAmount b) => FromSatoshis(a.Satoshis + b.Satoshis);
+    public static BitcoinAmount Zero => FromSatoshis(0);
     
     public override string ToString() => $"{Btc:F8} BTC";
 }
