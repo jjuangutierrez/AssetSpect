@@ -1,4 +1,4 @@
-namespace AssetSpect.Domain;
+namespace AssetSpect.Domain.ValueObjects;
 
 public record BitcoinAmount
 {

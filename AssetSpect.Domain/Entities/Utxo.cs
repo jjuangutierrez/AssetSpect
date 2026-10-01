@@ -1,4 +1,6 @@
-namespace AssetSpect.Domain;
+using AssetSpect.Domain.ValueObjects;
+
+namespace AssetSpect.Domain.Entities;
 
 public record Utxo
 {
