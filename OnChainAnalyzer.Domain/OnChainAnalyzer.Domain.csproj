@@ -4,10 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>AssetSpect.Domain</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\AssetSpect.Domain\AssetSpect.Domain.csproj" />
-    </ItemGroup>
 
 </Project>

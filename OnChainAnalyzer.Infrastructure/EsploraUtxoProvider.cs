@@ -1,9 +1,9 @@
 using System.Net.Http.Json;
-using AssetSpect.Application.Interfaces;
-using AssetSpect.Domain.Entities;
-using AssetSpect.Domain.ValueObjects;
+using OnChainAnalyzer.Application.Interfaces;
+using OnChainAnalyzer.Domain.Entities;
+using OnChainAnalyzer.Domain.ValueObjects;
 
-namespace AssetSpect.Infrastructure;
+namespace OnChainAnalyzer.Infrastructure;
 
 public class EsploraUtxoProvider : IUtxoProvider
 {

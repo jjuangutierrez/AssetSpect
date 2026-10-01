@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="OnChainAnalyzer.Application/OnChainAnalyzer.Application.csproj" />
+  <Project Path="OnChainAnalyzer.Cli/OnChainAnalyzer.Cli.csproj" />
+  <Project Path="OnChainAnalyzer.Domain/OnChainAnalyzer.Domain.csproj" />
+  <Project Path="OnChainAnalyzer.Infrastructure/OnChainAnalyzer.Infrastructure.csproj" />
+</Solution>

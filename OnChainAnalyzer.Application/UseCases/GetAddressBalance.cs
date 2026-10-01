@@ -1,7 +1,7 @@
-using AssetSpect.Domain.ValueObjects;
-using AssetSpect.Application.Interfaces;
+using OnChainAnalyzer.Domain.ValueObjects;
+using OnChainAnalyzer.Application.Interfaces;
 
-namespace AssetSpect.Application.UseCases;
+namespace OnChainAnalyzer.Application.UseCases;
 
 public class GetAddressBalance
 {

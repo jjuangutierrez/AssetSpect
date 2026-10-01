@@ -1,8 +1,8 @@
-using AssetSpect.Application.Interfaces;
-using AssetSpect.Domain.Entities;
-using AssetSpect.Domain.ValueObjects;
+using OnChainAnalyzer.Application.Interfaces;
+using OnChainAnalyzer.Domain.Entities;
+using OnChainAnalyzer.Domain.ValueObjects;
 
-namespace AssetSpect.Cli;
+namespace OnChainAnalyzer.Cli;
 
 public class FakeUtxoProvider: IUtxoProvider
 {

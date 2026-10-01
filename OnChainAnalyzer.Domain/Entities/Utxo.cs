@@ -1,6 +1,6 @@
-using AssetSpect.Domain.ValueObjects;
+using OnChainAnalyzer.Domain.ValueObjects;
 
-namespace AssetSpect.Domain.Entities;
+namespace OnChainAnalyzer.Domain.Entities;
 
 public record Utxo
 {

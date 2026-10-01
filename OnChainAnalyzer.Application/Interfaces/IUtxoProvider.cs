@@ -1,6 +1,6 @@
-using AssetSpect.Domain.Entities;
+using OnChainAnalyzer.Domain.Entities;
 
-namespace AssetSpect.Application.Interfaces;
+namespace OnChainAnalyzer.Application.Interfaces;
 
 public interface IUtxoProvider
 {

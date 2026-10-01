@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace AssetSpect.Infrastructure;
+namespace OnChainAnalyzer.Infrastructure;
 
 public record EsploraUtxoResponse
 {

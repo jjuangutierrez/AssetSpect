@@ -1,4 +1,4 @@
-namespace AssetSpect.Domain.ValueObjects;
+namespace OnChainAnalyzer.Domain.ValueObjects;
 
 public record BitcoinAmount
 {

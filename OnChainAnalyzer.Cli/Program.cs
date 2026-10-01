@@ -1,5 +1,5 @@
-﻿using AssetSpect.Application.UseCases;
-using AssetSpect.Infrastructure;
+﻿using OnChainAnalyzer.Application.UseCases;
+using OnChainAnalyzer.Infrastructure;
 
 var httpclient = new HttpClient
 {
