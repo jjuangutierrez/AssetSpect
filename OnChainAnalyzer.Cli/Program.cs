@@ -15,12 +15,27 @@ using var httpclient = new HttpClient
 };
 
 var provider = new EsploraUtxoProvider(httpclient);
-var getAddressBalance = new GetAddressBalance(provider);
+var getAddressUtxos  = new GetAddressUtxos(provider);
 
 try
 {
-    var balance = await getAddressBalance.ExecuteAsync(address);
-    Console.WriteLine(balance);
+    var result = await getAddressUtxos.ExecuteAsync(address);
+
+    Console.WriteLine($"Address: {address}");
+    Console.WriteLine();
+    Console.WriteLine($"{"TXID",-14}{"VOUT",-6}{"AMOUNT",-20}{"BLOCK",-12}");
+    
+    foreach (var utxo in result.Utxos)
+    {
+        var shortTxid = utxo.TransactionId[..8] + "...";
+        var block = utxo.BlockHeight?.ToString() ?? "unconfirmed";
+
+        Console.WriteLine($"{shortTxid,-14}{utxo.OutputIndex,-6}{utxo.Amount,-20}{block,-12}");
+    }
+
+    Console.WriteLine();
+    Console.WriteLine($"UTXOs: {result.Utxos.Count}");
+    Console.WriteLine($"Total: {result.Total}");
 }
 catch (HttpRequestException e)
 {

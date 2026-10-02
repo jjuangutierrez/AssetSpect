@@ -5,5 +5,5 @@ namespace OnChainAnalyzer.Infrastructure;
 public record EsploraStatusResponse
 {
     [JsonPropertyName("confirmed")] public bool Confirmed { get; init; } = false;
-    [JsonPropertyName("block_height")] public int? BlockHeight { get; } = 0;
+    [JsonPropertyName("block_height")] public int? BlockHeight { get; init; }
 }
