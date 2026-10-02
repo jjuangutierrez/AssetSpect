@@ -18,6 +18,6 @@ public class EsploraUtxoProvider : IUtxoProvider
     {
         var responses = await _httpClient.GetFromJsonAsync<List<EsploraUtxoResponse>>($"address/{address}/utxo") ?? [];
         
-        return responses.Select(r => new Utxo(r.Txid, r.Vout, BitcoinAmount.FromSatoshis(r.Value))).ToList();
+        return responses.Select(r => new Utxo(r.Txid, r.Vout, BitcoinAmount.FromSatoshis(r.Value), r.Status.BlockHeight)).ToList();
     }
 }
