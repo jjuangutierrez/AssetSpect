@@ -4,7 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>AssetSpect.Domain</RootNamespace>
+        <RootNamespace>OnChainAnalyzer.Domain</RootNamespace>
     </PropertyGroup>
 
 </Project>

@@ -5,7 +5,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>AssetSpect.Cli</RootNamespace>
+        <RootNamespace>OnChainAnalyzer.Cli</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
